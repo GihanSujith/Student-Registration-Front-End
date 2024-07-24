@@ -1,0 +1,39 @@
+.container {
+    margin-top: 50px;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.row {
+    align-items: center;
+}
+
+.col-6 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.form-control,
+.form-select {
+    border-radius: 5px;
+}
+
+.invalid-feedback {
+    font-size: 0.875em;
+}
