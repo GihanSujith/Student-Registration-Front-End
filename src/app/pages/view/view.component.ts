@@ -78,22 +78,28 @@ export class ViewComponent {
     "id": null,
     "firstName": null,
     "lastName": null,
+    "dateOfBirth": null,
+    "gender": null,
+    "address": null,
+    "city": null,
+    "religion": null,
+    "zipCode": null,
     "email": null,
-    "departmentId": null,
-    "roleId": null
+    "motherAndFatherName": null,
+    "phoneNumber": null   
   };
 
-  updateStudent(employe: any) {
+  updateStudent(student: any) {
 
-    if(employe!=null){
-      this.selectedStudent = employe;
+    if(student!=null){
+      this.selectedStudent = student;
     }
 
-    console.log(employe);
+    console.log(student);
 
   }
 
-  saveUpdateEmployee(){
+  saveUpdateStudent(){
     this.http.put("http://localhost:8080/student", this.selectedStudent).subscribe(res => {
       console.log("updated!");
     })
